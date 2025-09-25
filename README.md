@@ -37,7 +37,7 @@ Currently, the repository contains:
 
 1. Ensure GitHub Pages is enabled:
    - Go to **Settings → Pages → Source → gh-pages branch**.
-2. Push changes to `main`: https://karthikn-vr.github.io/vagrant-project/
+2. Push changes to `main`: 
    - Workflow automatically deploys `index.html`.
-3. Access your live site at:
+3. Access your live site at: https://karthikn-vr.github.io/vagrant-project/
 
