@@ -13,11 +13,11 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v4
 
-      # Step 2: Deploy to GitHub Pages using your PAT
+      # Step 2: Deploy to GitHub Pages using the PAT secret
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: BASAMPL4JLFKCQJDS6CMXV3I2THFI
-          publish_dir: .           # Deploy the root folder
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .           # Deploy the root folder (index.html)
+          personal_token: ${{ secrets.GH_PAT }}
           commit_message: "Deploy from GitHub Actions"
-            
