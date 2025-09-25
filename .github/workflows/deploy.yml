@@ -9,13 +9,15 @@ jobs:
   build-and-deploy:
     runs-on: self-hosted
     steps:
+      # Step 1: Checkout the repository
       - name: Checkout source
         uses: actions/checkout@v4
 
+      # Step 2: Deploy to GitHub Pages using your PAT
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .   # root folder (where index.html is)
-#commitng
-#commmit2
+          github_token: BASAMPL4JLFKCQJDS6CMXV3I2THFI
+          publish_dir: .           # Deploy the root folder
+          commit_message: "Deploy from GitHub Actions"
+            
