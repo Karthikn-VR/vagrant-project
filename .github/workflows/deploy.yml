@@ -18,3 +18,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .   # root folder (where index.html is)
 #commitng
+#commmit2
